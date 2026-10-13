@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171817">
+  <meta name="description" content="Specha — место для своих. Общайся в чатах, собирай друзей в голосовых комнатах и делись экраном. Скачай приложение для Windows.">
+  <title>Specha — свои на связи</title>
+  <link rel="icon" href="./mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="Specha — на главную"><img src="./mark.svg" alt="" width="34" height="34">specha<span class="brand-dot">™</span></a>
+    <nav aria-label="Основная навигация"><a href="#features">Возможности</a><a href="#hangout">Атмосфера</a><a href="#faq">Вопросы</a></nav>
+    <a class="button button-small button-outline" href="#download">Скачать Specha <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> МЕСТО, ГДЕ ТЕБЯ ЖДУТ</div>
+        <h1 id="hero-title">СВОИ.<br>ВСЕГДА<br><span class="coral">НА СВЯЗИ<span class="period">.</span></span></h1>
+        <p class="hero-description">Ещё одна катка. Разговор до утра. Мем, который поймут только ваши. Всё начинается в Specha.</p>
+        <div class="hero-actions"><a class="button button-coral" href="#download"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Скачать для Windows</a><a class="text-link" href="#hangout">Заглянуть внутрь <span>↗</span></a></div>
+        <div class="hero-note"><span class="windows-icon" aria-hidden="true">⊞</span> Windows · версия 0.7.1 <span class="note-divider">/</span> Бесплатная загрузка</div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-label">GOOD TIMES. GREAT PEOPLE.</div>
+        <div class="floating-label label-top"><span class="live-dot"></span> твои уже здесь</div>
+        <div class="app-window" id="app-preview">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>SPECHA / ВАША КОМПАНИЯ</span><span class="window-top-symbol">↗</span></div>
+          <div class="app-body">
+            <aside class="server-rail" aria-label="Пример сообществ"><div class="server-logo"><img src="./mark.svg" alt="" width="25" height="25"></div><div class="rail-line"></div><span class="server-item selected">✳</span><span class="server-item">☄</span><span class="server-item">＋</span></aside>
+            <aside class="channels"><div class="community-name">Свои люди <span>⌄</span></div><div class="channel-heading">ТЕКСТОВЫЕ КАНАЛЫ</div><button class="channel active" data-channel="general"><span>#</span> общий</button><button class="channel" data-channel="memes"><span>#</span> мемы</button><button class="channel" data-channel="plans"><span>#</span> планы-на-вечер</button><div class="channel-heading voice-heading">ГОЛОСОВЫЕ КОМНАТЫ</div><button class="channel voice-channel" id="voice-toggle"><span>◖))</span> Вечерний сбор</button><div class="voice-person"><span class="avatar avatar-pink">М</span>masha <span class="speaking-bars">▂▆▃</span></div><div class="voice-person"><span class="avatar avatar-green">Д</span>danil</div><div class="voice-person"><span class="avatar avatar-orange">Т</span>ты <span class="you-dot"></span></div><div class="voice-connected"><span class="live-dot"></span><span id="voice-status">На связи</span><button id="mute-toggle" aria-label="Выключить микрофон" aria-pressed="false">♩</button></div><div class="profile-strip"><span class="avatar avatar-orange">Т</span><span>ты<small>в своей стихии</small></span><span class="profile-gear">⚙</span></div></aside>
+            <div class="chat"><div class="chat-header"><span>#</span> <strong id="channel-title">общий</strong><span class="chat-header-right">◎ &nbsp; ◇</span></div><div class="chat-content" id="chat-content"><div class="chat-start"><span>✳</span><h2>Ну что, собираемся?</h2><p>Хороший вечер начинается со своих.</p></div><div class="date-divider">СЕГОДНЯ</div><div class="message"><span class="avatar avatar-pink">М</span><div><strong>masha <time>20:42</time></strong><p>кто в голос? есть одна история 👀</p></div></div><div class="message"><span class="avatar avatar-green">Д</span><div><strong>danil <time>20:43</time></strong><p>я тут. запускай, мы слушаем</p><button class="reaction" id="reaction" aria-label="Добавить реакцию огонь" aria-pressed="false">🔥 <span>2</span></button></div></div><div class="message"><span class="avatar avatar-orange">Т</span><div><strong>ты <time>20:43</time></strong><p>это будет легендарно ✨</p></div></div></div><form class="message-input" id="demo-form"><span>＋</span><label class="sr-only" for="demo-message">Сообщение в демонстрационном чате</label><input id="demo-message" maxlength="180" placeholder="Напиши что-нибудь своим…" autocomplete="off"><button type="submit" aria-label="Отправить демонстрационное сообщение">↑</button></form><div class="demo-caption">ИНТЕРАКТИВНОЕ ПРЕВЬЮ · ПОПРОБУЙ ЧАТ</div></div>
+          </div>
+        </div>
+        <div class="sticker"><span>меньше шума.</span><strong>БОЛЬШЕ<br>СВОИХ.</strong><span class="sticker-star">✳</span></div>
+        <div class="floating-label label-bottom"><span>↗</span> не выходи из вайба</div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div>ТВОЙ ЧАТ <span>✳</span> ТВОЙ ГОЛОС <span>✳</span> ТВОЯ КОМПАНИЯ <span>✳</span> ТВОЙ ВАЙБ <span>✳</span> ТВОЙ ЧАТ <span>✳</span> ТВОЙ ГОЛОС <span>✳</span> ТВОЯ КОМПАНИЯ <span>✳</span> ТВОЙ ВАЙБ <span>✳</span></div></div>
+
+    <section class="features wrap section" id="features">
+      <div class="section-top"><div class="eyebrow">01 / БЛИЖЕ, ЧЕМ КАЖЕТСЯ</div><p>Всё для общения.<br>И ещё немного магии.</p></div>
+      <h2 class="section-title">Расстояние есть.<br><span class="muted">Дистанции — нет.</span></h2>
+      <div class="feature-grid">
+        <article class="feature-card voice-card"><div class="feature-art waveform"><span style="--h:25px"></span><span style="--h:47px"></span><span style="--h:77px"></span><span style="--h:41px"></span><span style="--h:95px"></span><span style="--h:64px"></span><span style="--h:120px"></span><span style="--h:85px"></span><span style="--h:47px"></span><span style="--h:72px"></span><span style="--h:33px"></span><div class="wave-label">● Вечерний сбор</div></div><span class="feature-number">01</span><h3>Залетай в голос</h3><p>Комнаты до 8 человек. Обсуждать планы, проходить боссов или просто молчать вместе.</p><span class="feature-tag">ГОЛОС И ВИДЕО <span>↗</span></span></article>
+        <article class="feature-card chat-card"><div class="feature-art bubble-art"><div class="mini-bubble">это надо видеть <span>👀</span></div><div class="mini-bubble second">скидывай сюда!</div><div class="mini-reaction">✨ 3 &nbsp; ♥ 2</div></div><span class="feature-number">02</span><h3>У каждого — свой чат</h3><p>Сообщества, каналы и личные сообщения. Мемы не теряются, важное можно закрепить.</p><span class="feature-tag">ЧАТЫ И СООБЩЕСТВА <span>↗</span></span></article>
+        <article class="feature-card screen-card"><div class="feature-art screen-art"><div class="mini-screen"><div class="screen-sun"></div><div class="screen-mountain mountain-one"></div><div class="screen-mountain mountain-two"></div><div class="screen-live">● ПОКАЗ ЭКРАНА</div></div><div class="screen-cursor">↖ <span>твой экран</span></div></div><span class="feature-number">03</span><h3>Показывай, а не объясняй</h3><p>Включай камеру или делись окном. Смотреть, творить и разбираться вместе гораздо интереснее.</p><span class="feature-tag">КАМЕРА И ДЕМОНСТРАЦИЯ <span>↗</span></span></article>
+      </div>
+    </section>
+
+    <section class="hangout section" id="hangout"><div class="wrap hangout-grid"><div class="hangout-art" aria-hidden="true"><div class="big-asterisk">✳</div><div class="hangout-tile tile-one">НАШ<br>УГОЛОК.<span>↗</span></div><div class="hangout-tile tile-two">☻</div><div class="hangout-bubble">есть кто живой?</div><div class="hangout-reply">всегда для тебя 💚</div><div class="hangout-orbit"></div></div><div class="hangout-copy"><div class="eyebrow">02 / ЗДЕСЬ МОЖНО БЫТЬ СОБОЙ</div><h2 class="section-title">Не подписчики.<br>Не аудитория.<br><span class="coral">Твои люди.</span></h2><p>Создай сообщество для тех, с кем на одной волне. Раздели разговоры по каналам, пригласи друзей и устрой место, в которое хочется вернуться.</p><a class="text-link" href="#download">Собрать своих <span>↗</span></a></div></div></section>
+
+    <section class="download-section wrap section" id="download"><div class="download-panel"><div class="download-copy"><div class="eyebrow">03 / ВЕЧЕР САМ СЕБЯ НЕ ПРОВЕДЁТ</div><h2>ТВОИ ЖДУТ.<br>ЗАЛЕТАЙ<span>↗</span></h2><p>Один файл. Твоя компания. Хороший вечер.</p><button class="button button-dark" id="download-button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg><span id="download-label">Скачать для Windows</span></button><div class="download-meta">v0.7.1 <span>·</span> 89.8 МБ <span>·</span> Portable .exe</div><div class="download-status" id="download-status" role="status" aria-live="polite"></div><div class="download-progress" id="download-progress" hidden><progress id="progress" max="100" value="0" aria-label="Загрузка приложения"></progress><button id="cancel-download">Отменить</button></div><p class="build-note">Текущая сборка приложения называется DuriChat. Скачай и запусти файл — установка и Node.js не нужны.</p></div><div class="download-art" aria-hidden="true"><div class="download-ring"></div><img src="./mark.svg" alt=""><span class="download-art-word">LET’S<br>HANG<br>OUT.</span></div></div></section>
+
+    <section class="faq wrap section" id="faq"><div class="faq-heading"><div class="eyebrow">04 / НА СЛУЧАЙ «А КАК?»</div><h2 class="section-title">Пара слов<br>перед стартом.</h2></div><div class="faq-list"><details><summary>Как начать общаться?<span>＋</span></summary><p>Скачай Windows-приложение и запусти .exe. Владелец компании запускает сервер на своём компьютере и делится кодом подключения. Подключись по коду, создай аккаунт и присоединяйся к сообществу.</p></details><details><summary>Нужно ли устанавливать приложение?<span>＋</span></summary><p>Нет, версия 0.7.1 — portable: она запускается из одного файла. Данные приложения сохраняются в папке %APPDATA%/durichat/data. Внутри эта сборка называется DuriChat.</p></details><details><summary>Почему Windows показывает предупреждение?<span>＋</span></summary><p>У текущей сборки нет сертификата подписи издателя. Windows может показать предупреждение при запуске. Используй файл из этого блока загрузки и запускай его, только если доверяешь проекту.</p></details><details><summary>А что с macOS и телефоном?<span>＋</span></summary><p>Сейчас здесь доступна только сборка для Windows. Установщиков для macOS, Linux, iOS и Android в проекте пока нет.</p></details><details><summary>Где хранятся сообщения?<span>＋</span></summary><p>Сообщения и файлы сообщества хранятся на компьютере владельца сервера. Для связи сервер должен работать и быть доступен участникам. Владелец управляет приглашениями, каналами и участниками.</p></details></div></section>
+  </main>
+
+  <footer class="footer wrap"><a class="brand" href="#"><img src="./mark.svg" alt="" width="34" height="34">specha<span class="brand-dot">™</span></a><span>Создано для твоей компании.</span><a href="#download">Увидимся в голосе <span>↗</span></a><div class="footer-bottom"><span>© 2026 Specha</span><span>GOOD TIMES. GREAT PEOPLE.</span><a href="#">Наверх ↑</a></div></footer>
+</body>
+</html>
+
